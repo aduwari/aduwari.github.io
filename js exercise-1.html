@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            alert("Hello World!")
+
+           // EXERCISE "VARIABLES" //
+
+            var x=1;
+            alert(x);
+            console.log(x);
+            document.write(x+1);
+
+            // EXERCISE "FUNCTIONS 1" //
+
+            function myfunction(p1,p2) {
+                return p1*p2;
+            }
+            var x = myfunction(2,2);
+            console.log(x);
+
+            // EXERCISE "FUNCTIONS 2" //
+
+            function add(p1,p2,p3) {
+                return p1+p2+p3;
+            }
+            var x = add(2,2,2);
+            console.log(x);
+
+            // EXERCISE "VARIABLES 2" //
+
+            var person = {
+                name:"Steve",
+                age:18,
+                occupation:"Nurse"
+            };
+
+            console.log(person);
+
+            person.name = "Carlos";
+
+            console.log(person);
+
+            // EXERCISE "EVENTS 1" //
+
+            function increaseAge() {
+                person.age = person.age + 1;
+                console.log(person);
+            }
+        
+
+        </script>
+        <form>
+            <button type="button" onclick="increaseAge()">Increase Age</button>
+        </form>
+
+            <!-- EXERCISE "FUNCTIONS 3/EVENTS 2" -->
+
+            <form>
+                <input type="text" id="name" value="">
+                <input type="text" id="age" value="">
+                <input type="text" id="occupation" value="">
+                <button type="button" onclick="editValue()">edit value</button>
+            </form>
+
+            <script>
+                function editValue() {
+                    var person2 = {
+                        name:document.getElementById("name").value,
+                        age:document.getElementById("age").value,
+                        occupation:document.getElementById("occupation").value
+                    };
+                    console.log(person2);
+                }
+            </script>
+
+                        <!-- EXERCISE STRING 1 -->
+              
+            <script>
+                var a = "He said “My name is Elliott";
+                console.log(a);
+
+                var a = a.toUpperCase();
+                console.log(a);
+            </script>
+
+                         <!-- EXERCISE STRINGS 2 -->
+
+            <script>
+            var x = 5;
+            var y = "food";
+            console.log(x,y);
+
+            var z = x+y;
+            console.log(z);
+            </script>
+
+                     <!-- EXERCISE ARRAYS 1/STRINGS 3 -->
+
+            <script>
+           
+            var cars = ["bmw", "vw", "audi"];
+            console.log(cars);
+            {
+                cars.push("ford");
+                console.log(cars);
+
+                cars.splice(3);
+                console.log(cars);
+            }
+
+            
+            </script>         
+
+
+    </body>
+</html>
