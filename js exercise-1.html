@@ -2,7 +2,39 @@
 <html>
     <body>
         <script>
-            alert("Hello World!")
+
+        var example=5;
+        console.log(example);
+        var operatorExample = 5 + 5;
+        console.log(operatorExample);
+        var exampleString = "Hello World!";
+        console.log(exampleString);
+        var exampleString2 = "Hello" + " World" + "!"
+        console.log(exampleString2);
+        console.log(5+5);
+        console.log(5*10);
+        console.log(10%3);
+        console.log(5+10/2*5-10);
+        console.log((6+10)/2*5-10);
+        var x=0;
+        console.log(x=x+1);
+        console.log(x+=1);
+        console.log(x++);
+        console.log(++x);
+        console.log(x=x+1);
+        console.log(5 > 3);
+        console.log(3 != 3);
+        console.log(3 <= 2 && 5 >2);
+        console.log(!5>3);
+        console.log(5 + "5");
+        console.log(5 + true);
+        console.log(5 * "5");
+        console.log(1 == true);
+        console.log(1 === true);
+
+           
+           
+        alert("Hello World!")
 
            // EXERCISE "VARIABLES" //
 
@@ -64,8 +96,10 @@
             </form>
 
             <script>
+                var person2 = {};
+
                 function editValue() {
-                    var person2 = {
+                    person2 = {
                         name:document.getElementById("name").value,
                         age:document.getElementById("age").value,
                         occupation:document.getElementById("occupation").value
@@ -109,9 +143,46 @@
                 console.log(cars);
             }
 
+        
+
             
             </script>         
 
+                          <!--EXERCISE CONDITIONALS 1-->
 
-    </body>
+        <button type="button" onclick="checkAge()">check Age</button>
+
+        <script>
+            function checkAge() {
+            
+            
+                if ((person2.age > 19) && (person2.age < 41)) {
+                    console.log("Person 2 is between 20 and 40 years old.");
+                }
+                else {
+                    console.log("Person 2 is NOT between 20 and 40 years old.");
+                }
+            }
+        </script>
+
+                            <!--EXERCISE ITERATION 1-->
+
+             <script>
+                for (var i = 1; i < 11; i++) {
+                    console.log(i);
+                
+                
+                }
+             </script>               
+
+                            <!--EXERCISE ITERATION 2-->
+
+            <script>
+                 for (var i = 1; i < 11; i++) {
+                    if (i % 2 == 0){
+                        console.log(i);
+                    }
+                 }
+            </script>                
+    </body> 
 </html>
