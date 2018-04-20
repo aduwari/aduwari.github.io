@@ -264,17 +264,35 @@
             </script>
 
                                           <!--EXERCISE DOM 1-->
-
+                
+                
+                <div id="insert">
+                <p id="p1"> This is my first paragragh.</p> 
+                <p id="p2">This is my second paragragh.</p>
+                </div>
+               
+                <button type="button" onclick="createParagraph()">Create Paragragh</button><br>                         
+                <button type="button" onclick="deleteParagraph()">delete Paragragh</button>
+               
                 <script>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                </script>                          
+
+
+
+                 function  createParagraph() {
+                    let para = document.createElement("p");
+                    para.id ="newPara";
+                    let node = document.createTextNode("This is my third paragraph.");
+                    para.appendChild(node);
+
+                    let element = document.getElementById("insert");
+                    element.appendChild(para);
+                 }
+
+                 function  deleteParagraph() {
+                    let para = document.getElementById("newPara");
+                    let element = document.getElementById("insert");
+                    element.removeChild(para);
+                }
+            </script>                          
     </body> 
 </html>
