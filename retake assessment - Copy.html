@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            //// Prime Numbers////
+
+            function isPrime(numbertotest){
+            var prime = true;
+             if(numbertotest <= 2){
+                 prime = false;
+             }
+             else{
+                for(var i = 2; i < numbertotest; i++){
+                 if(numbertotest % i==0){
+                      prime = false;
+                  }
+                 
+               }
+            }
+            if(prime)console.log(numbertotest + " is prime");
+            if(!prime)console.log(numbertotest + " is not prime");
+            }
+            isPrime(3);
+
+
+
+            //////Factorial//////
+
+             var userinput = 4;
+             var sum = userinput;
+             
+             for(var i = userinput -1;i>0;i--){
+                 sum = sum * i;
+             }
+             console.log(sum);
+
+         </script>
+     </body>
+</html>
